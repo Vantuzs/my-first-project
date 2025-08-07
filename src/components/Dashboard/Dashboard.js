@@ -1,10 +1,18 @@
 import React from 'react';
+import { useState } from 'react';
+
+const Dashboard123 = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
+  if(isLoading) {
+    return <div>Loading.....</div>
+  }
 
 const Dashboard = () => {
   return (
-    <h1>
+    <div>
       It's a dashboard component
-    </h1>
+    </div>
   );
 }
 
